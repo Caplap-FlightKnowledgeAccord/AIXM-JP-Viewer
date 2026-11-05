@@ -1,0 +1,60 @@
+# データディレクトリ（実データ・生成DB）
+data/raw/aip/*.xml
+data/raw/aip/*.md
+data/raw/aip/split/
+data/raw/notam/**/*.xml
+data/processed/duckdb/*.duckdb
+data/processed/geoparquet/*.parquet
+data/processed/geoparquet/aip/*.parquet
+data/**/*.db
+
+# ログ・一時デバッグフォルダ
+logs/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# 仮想環境
+venv/
+.venv/
+env/
+
+# IDE
+.vscode/*.log
+.idea/
+
+# OS
+Thumbs.db
+.DS_Store
+
+# 一時ファイル・ドキュメント
+*.tmp
+*.bak
+/docs
+/dist
+
+# 環境変数・秘密情報（GitHub除外）
+.env
+.env.*
+!.env.example
+secrets.json
+config/secrets.json

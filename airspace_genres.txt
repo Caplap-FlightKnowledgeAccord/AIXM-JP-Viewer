@@ -1,0 +1,163 @@
+================================================================================
+AIP-FULL 空域データ 種類・ジャンル一覧
+================================================================================
+データソース: AIP-FULL (AIXM 5.1)
+総空域フィーチャー数: 569件
+分類方法: AIXMの <type> タグおよび <localType> タグの組み合わせによる区分
+
+--------------------------------------------------------------------------------
+【空域ジャンル 一覧サマリー】
+--------------------------------------------------------------------------------
+No.  ジャンル名（日本語）                AIXM type   AIXM localType                                       件数
+---------------------------------------------------------------------------------------------------------
+ 1   民間訓練試験空域                    D_OTHER     CIVIL TRAINING AND TESTING AREA                      174件
+ 2   飛行制限区域（重要施設等）          D_OTHER     (AIRSPACE RESTRICTIONS)                               81件
+ 3   管制セクター（航空路管制空域）      SECTOR      (設定なし)                                            76件
+ 4   管制圏（CTR）                       CTR         (設定なし)                                            75件
+ 5   自衛隊高高度訓練試験空域            D_OTHER     HIGH ALT TRAINING/TESTING AREA FOR JSDF AIRCRAFT      63件
+ 6   情報圏（Information Zone）          OTHER       INFORMATION ZONE                                      40件
+ 7   進入管制区（APCH CTA）              OTHER       APPROACH CONTROL AREA                                 31件
+ 8   自衛隊等訓練回廊（コリドー）        MTR         (設定なし)                                            12件
+ 9   自衛隊低高度訓練試験空域            D_OTHER     LOW ALT TRAINING/TESTING AREA FOR JSDF AIRCRAFT       10件
+10   飛行制限区域（Restricted Area）     R           (設定なし)                                             3件
+11   空港等特別管制空域（ATA）           OTHER       ATA                                                    1件
+12   超音速飛行空域                      D_OTHER     SUPERSONIC FLIGHT AREA                                 1件
+13   飛行情報区（FIR）                   FIR         (設定なし)                                             1件
+14   防空識別圏（ADIZ）                  ADIZ        (設定なし)                                             1件
+---------------------------------------------------------------------------------------------------------
+合計                                                                                              569件
+
+
+================================================================================
+【各ジャンルの詳細および代表例】
+================================================================================
+
+1. 民間訓練試験空域 (CIVIL TRAINING AND TESTING AREA)
+   - AIXM属性: type = D_OTHER / localType = CIVIL TRAINING AND TESTING AREA
+   - 収録件数: 174件
+   - 概要: 民間航空機等の操縦訓練・試験飛行のために設定されている空域。
+   - 代表例:
+       * KS4-2-80 (KS4-2-80)
+       * TH13-4-7 (TH13-4-7)
+       * TH13-4-8 (TH13-4-8)
+       * KS4-4    (KS4-4)
+
+2. 飛行制限区域（重要施設・制限区域） ((AIRSPACE RESTRICTIONS))
+   - AIXM属性: type = D_OTHER / localType = (AIRSPACE RESTRICTIONS)
+   - 収録件数: 81件
+   - 概要: 原子力発電所・核燃料関連施設や米軍関連施設周辺の飛行制限空域。
+   - 代表例:
+       * 027 (GLOBAL NUCLEAR FUEL JAPAN CO LTD / グローバル・ニュークリア・フュエル・ジャパン)
+       * 006 (JAPAN NUCLEAR FUEL LIMITED REPROCESSING OFFICE / 日本原燃再処理事業所)
+       * 017 (JAEA NUCLEAR FUEL CYCLE ENGINEERING LABORATORIES / 日本原子力研究開発機構)
+       * CAMPSCHWAB (CAMP SCHWAB / キャンプ・シュワブ)
+
+3. 管制セクター（航空路管制空域） (SECTOR)
+   - AIXM属性: type = SECTOR / localType = (なし)
+   - 収録件数: 76件
+   - 概要: 航空路管制機関（福岡ACC / 東京ACC等）が管轄する航空路・高高度セクター。
+   - 代表例:
+       * F14   (F14セクター)
+       * F07_2 (F07_2セクター)
+       * N50   (N50セクター)
+       * N49_2 (N49_2セクター)
+
+4. 管制圏 (CTR - Control Zone)
+   - AIXM属性: type = CTR / localType = (なし)
+   - 収録件数: 75件
+   - 概要: 空港及びその周辺上空の空域で、離着陸機の安全のために設定された空域。
+   - 代表例:
+       * RJSN (NIIGATA / 新潟)
+       * ROIG (ISHIGAKI / 石垣)
+       * RJTU (UTSUNOMIYA / 宇都宮)
+       * RJST (MATSUSHIMA / 松島)
+
+5. 自衛隊高高度訓練試験空域 (JSDF HIGH ALT TRAINING/TESTING AREA)
+   - AIXM属性: type = D_OTHER / localType = HIGH ALT TRAINING/TESTING AREA FOR JSDF AIRCRAFT
+   - 収録件数: 63件
+   - 概要: 自衛隊機が高高度で訓練・試験を実施するための空域。
+   - 代表例:
+       * D-2   (D-2)
+       * A-21S (A-21S)
+       * P-1   (P-1)
+       * L     (L)
+
+6. 情報圏 (INFORMATION ZONE)
+   - AIXM属性: type = OTHER / localType = INFORMATION ZONE
+   - 収録件数: 40件
+   - 概要: 航空管制官が配置されていないレディオ空港またはリモート空港周辺に設定される情報提供空域。
+   - 代表例:
+       * RJAF (MATSUMOTO / 松本)
+       * RJKN (TOKUNOSHIMA / 徳之島)
+       * RORT (TARAMA / 多良間)
+       * RJER (RISHIRI / 利尻)
+
+7. 進入管制区 (APPROACH CONTROL AREA / APCH CTA)
+   - AIXM属性: type = OTHER / localType = APPROACH CONTROL AREA
+   - 収録件数: 31件
+   - 概要: 主要空港のターミナル周辺で、レーダー等による進入管制業務が行われる管制区。
+   - 代表例:
+       * FUKUOKA   (FUKUOKA APCH CTA / 福岡進入管制区)
+       * CHUBU     (CHUBU APCH CTA / 中部進入管制区)
+       * SHIRAKAMI (SHIRAKAMI APCH CTA / 白神進入管制区)
+       * AKENO     (AKENO APCH CTA / 明野進入管制区)
+
+8. 自衛隊等訓練回廊（コリドー） (MTR - Military Training Route)
+   - AIXM属性: type = MTR / localType = (なし)
+   - 収録件数: 12件
+   - 概要: 基地と訓練空域を結ぶための軍用機用回廊ルート。
+   - 代表例:
+       * IWAKUNI W  (IWAKUNI WEST CORRIDOR / 岩国西回廊)
+       * KOMATSU G  (KOMATSU G CORRIDOR / 小松G回廊)
+       * NYUTA E    (NYUTABARU EAST CORRIDOR / 新田原東回廊)
+       * MATSUSHIMA (MATSUSHIMA C CORRIDOR / 松島C回廊)
+
+9. 自衛隊低高度訓練試験空域 (JSDF LOW ALT TRAINING/TESTING AREA)
+   - AIXM属性: type = D_OTHER / localType = LOW ALT TRAINING/TESTING AREA FOR JSDF AIRCRAFT
+   - 収録件数: 10件
+   - 概要: 自衛隊機が低高度において訓練・試験を実施するための空域。
+   - 代表例:
+       * AREA 3   (AREA 3)
+       * AREA 4   (AREA 4)
+       * AREA 5   (AREA 5)
+       * AREA 9-2 (AREA 9-2)
+
+10. 飛行制限区域（制限区域） (R - Restricted Area)
+    - AIXM属性: type = R / localType = (なし)
+    - 収録件数: 3件
+    - 概要: 航空法に基づき指定されている飛行制限区域。
+    - 代表例:
+        * RJR1
+        * RJR2
+        * RJR3
+
+11. 空港等特別管制空域 (ATA - Airport Traffic Area)
+    - AIXM属性: type = OTHER / localType = ATA
+    - 収録件数: 1件
+    - 概要: 米陸軍キャスナー飛行場周辺の特別管制空域。
+    - 代表例:
+        * RJTR (KASTNER / キャスナー)
+
+12. 超音速飛行空域 (SUPERSONIC FLIGHT AREA)
+    - AIXM属性: type = D_OTHER / localType = SUPERSONIC FLIGHT AREA
+    - 収録件数: 1件
+    - 概要: 超音速飛行訓練用に指定されている空域。
+    - 代表例:
+        * SUPERSONIC (SUPERSONIC FLIGHT AREA)
+
+13. 飛行情報区 (FIR - Flight Information Region)
+    - AIXM属性: type = FIR / localType = (なし)
+    - 収録件数: 1件
+    - 概要: 飛行情報業務及び警急業務が提供される広域空域。
+    - 代表例:
+        * RJJJ (FUKUOKA / 福岡FIR)
+
+14. 防空識別圏 (ADIZ - Air Defense Identification Zone)
+    - AIXM属性: type = ADIZ / localType = (なし)
+    - 収録件数: 1件
+    - 概要: 国防上の識別・位置特定のために設定された防空識別圏。
+    - 代表例:
+        * ADIZ (日本防空識別圏)
+
+================================================================================
+

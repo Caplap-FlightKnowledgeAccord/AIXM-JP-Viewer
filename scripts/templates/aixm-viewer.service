@@ -1,0 +1,17 @@
+[Unit]
+Description=AIP/NOTAM Viewer Web Application Service
+After=network.target
+
+[Service]
+Type=simple
+User=ubuntu
+WorkingDirectory=/opt/aixm-jp-viewer
+ExecStart=/opt/aixm-jp-viewer/venv/bin/python3 main.py web
+Restart=always
+RestartSec=5
+Environment=PYTHONUNBUFFERED=1
+Environment=PORT=8000
+Environment=HOST=0.0.0.0
+
+[Install]
+WantedBy=multi-user.target

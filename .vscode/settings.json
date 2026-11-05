@@ -1,0 +1,35 @@
+{
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
+  "workbench.editorAssociations": {
+    "*.copilotmd": "vscode.markdown.preview.editor",
+    "*.parquet": "duckdb.dataFileViewer",
+    "*.csv": "duckdb.dataFileViewer",
+    "*.tsv": "duckdb.dataFileViewer",
+    "*.xlsx": "duckdb.dataFileViewer"
+  },
+  "duckdb.databases": [
+    {
+      "alias": "aip",
+      "type": "file",
+      "path": "${workspaceFolder}/data/processed/duckdb/aip.duckdb",
+      "readOnly": true,
+      "attached": false
+    },
+    {
+      "alias": "notam",
+      "type": "file",
+      "path": "${workspaceFolder}/data/processed/duckdb/notam.duckdb",
+      "readOnly": true,
+      "attached": false
+    },
+    {
+      "alias": "aip_archive",
+      "type": "file",
+      "path": "${workspaceFolder}/data/processed/duckdb/aip_archive.duckdb",
+      "readOnly": true,
+      "attached": false
+    }
+  ],
+  "duckdb.defaultDatabase": "aip_archive"
+}
